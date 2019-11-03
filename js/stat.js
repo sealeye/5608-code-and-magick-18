@@ -1,7 +1,7 @@
 window.renderStatistics = function (ctx, names, times) {
 
   // times = Math.round(times);
-  console.log(times);
+  //console.log(times);
 
   // тень
   ctx.fillStyle = shadow.color;
@@ -37,10 +37,10 @@ window.renderStatistics = function (ctx, names, times) {
       ctx.fillStyle = gist.mainColor;
     } else {
       ctx.fillStyle = gist.columnColor();
-      console.log(gist.columnColor());
+      //console.log(gist.columnColor());
     }
     ctx.fillRect(cloud.horizontalCoord + 30 + cloud.width / 4 * i, gist.verticalCoord + gist.height - columnHeight, gist.columnWidth, columnHeight);
-    console.log(cloud.horizontalCoord + 30 + cloud.width / 4 * i, gist.verticalCoord + gist.height - columnHeight, gist.columnWidth, columnHeight);
+    //console.log(cloud.horizontalCoord + 30 + cloud.width / 4 * i, gist.verticalCoord + gist.height - columnHeight, gist.columnWidth, columnHeight);
 
     //имя
     ctx.font = text.size + ' ' + text.font;
@@ -54,8 +54,8 @@ window.renderStatistics = function (ctx, names, times) {
     // }
   }
 
-  console.log(times, maxResult, timeIndex);
-  console.log(text.size + ' ' + text.font);
+  //console.log(times, maxResult, timeIndex);
+  //console.log(text.size + ' ' + text.font);
 };
 
 var cloud = {
