@@ -97,7 +97,7 @@ userNameInput.addEventListener('input', function (evt) {
 });
 
 var onPopupEscPress = function (evt) {
-  if (evt.keyCode === ESC_KEYCODE && document.activeElement !== userNameInput) {
+  if (evt.keyCode === ESC_KEYCODE && document.activeElement !== userNameInput) { // проверка, что инпут не в фокусе
     closePopup();
   }
 };
@@ -133,7 +133,6 @@ setupClose.addEventListener('keydown', function (evt) {
 });
 
 // изменение параметров персоонажа при клике
-
 wizardCoat.addEventListener('click', function () {
   var wizardCoatColor = random(coatColors);
   wizardCoat.style.fill = wizardCoatColor;
