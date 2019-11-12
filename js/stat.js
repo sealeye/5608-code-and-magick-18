@@ -1,8 +1,4 @@
 window.renderStatistics = function (ctx, names, times) {
-
-  // times = Math.round(times);
-  //console.log(times);
-
   // тень
   ctx.fillStyle = shadow.color;
   ctx.fillRect(shadow.horizontalCoord, shadow.verticalCoord, shadow.width, shadow.height);
